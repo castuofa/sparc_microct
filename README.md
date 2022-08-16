@@ -8,9 +8,9 @@ Please cite this exercise as Claxton, A.G., Wilson, M., Terhune, C. (2022) Explo
 
 #### TABLE OF CONTENTS
 
-[Background](http://github.com/castuofa/sparc/microct/Background.md)
+[Background](/Background.md)
 
-[Exercise 1](http://github.com/castuofa/sparc/microct/exercise_1)
+[Exercise 1](/exercise_1)
 
 ### **Introduction, Aims, and Learning Outcomes**
 The use of computed tomography (CT) imaging in archaeological investigations has been an area of considerable growth in the last several decades. Archaeological applications of CT imaging can be broadly grouped into seven categories: digital autopsies of preserved human or animal remains, documentation of paleopathological conditions and/or trauma, virtually unfurling and reconstructing ancient scrolls or texts, examination of the contents of sealed vessels (e.g., ceramics or basketry), identification of raw materials used in artifact manufacture and/or the reconstruction of manufacturing techniques, archaeobotanical and/or microsedimentological analysis, and the documentation and verification of cultural heritage objects. You can learn more about the variety of archaeological applications of CT imaging here and here. 
