@@ -8,7 +8,7 @@ Please cite this exercise as Claxton, A.G., Wilson, M., Terhune, C. (2022) Explo
 
 #### TABLE OF CONTENTS
 
-[Background](/Background.md)
+[Background](/background.md)
 
 [Exercise 1](/exercise_1)
 
