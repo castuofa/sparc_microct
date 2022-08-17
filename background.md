@@ -46,3 +46,84 @@ Some of these parameters include:
 
 * Filters
   * Filters may be added to the x-ray source for two reasons: 1) optimization of image gray levels and/or 2) reduce beam-hardening effects. Filters are simply pieces of metal in a variety of different thicknesses (e.g., 1 mm, 2 mm) and materials (e.g., copper, tin). The effect of using a filter is that the average energy of the x-ray beam is increased and lower energy x-rays are removed (for example, x-rays that may not have enough energy to penetrate the object). As a result of using filters, the minimum gray values will be increased (erasing lighter materials), but this will also provide better penetration for more dense materials. 
+
+
+All of these parameters combine to maximize grayscale values picked up by the detector. This range of values is represented graphically by a histogram (Figure 0-5). 
+* Min GV- represents the most dense material and indicates how well the sample is being penetrated by the X-ray beams
+* Max GV- represents the least dense material (usually the image background)
+
+
+### 8-bit vs. 16 bit Data
+The number of grayscale values that a system can detect is a function of its “bit depth” (Figure 0-6). For example, medical CT scanners typically capture density differences as 8-bit images. This is actually 256 shades of grayscale from pure white to pure black. A bit is a 0 or a 1, so there are two states, and the 8 refers to how many 0’s and 1’s can be used to represent a single grayscale value. Thus, 8-bit images have 2^8 number of grayscale represented between pure white and pure black, and 2^8 = 256. This means that all of the density differences in an object have to be binned into just 256 grayscale values. On the other hand, micro-CT scanners typically capture density differences as 16-bit, which is 2^16 = 65,536. This means that 16-bit scanners can bin the density differences on an object into 65,536 grayscale values between pure white and pure black. The higher the bit depth, the more density detail of an object that the detector can capture.
+
+### Data Reconstruction and Imaging Artifacts
+Following CT acquisition, the raw images (or projections) must be processed to “reconstruct” the data. This is typically done in software linked to the equipment (in the case of UArk MICRO, CT Pro 3D from Nikon). This software algorithmically locates the center of rotation from the object and then reconstructs the data into a 3D volume. The reconstruction software can also help correct some image artifacts, or may be the first time imaging artifacts are identified. 
+
+Common types of image artifacts in microCT include:
+* Noisy data often results from scans that are conducted when the beam current is not high enough. This causes a grainy appearance to otherwise homogenous structures (e.g., air) and can make identifying boundaries between materials with different densities more challenging. 
+* Ring artifacts are visible as concentric rings around the axis of rotation of the object. These tend to be more common in more homogeneous materials. 
+* Beam hardening artifacts occur when lower energy x-rays produced by the x-ray beam are absorbed when first contacting the object being scanned. This causes the appearance of a more dense “shell” of the object, when in fact this is not the case. 
+* Streak (or extinction) artifacts where denser materials (e.g., metal) may cast a shadow behind them where x-rays were not able to penetrate the material. 
+* Motion artifacts, where the object may have moved during scanning, often causing a failure in the ability for the software to find the center of axis of rotation of the object.
+
+### Data Formats and Metadata
+Once collected and reconstructed, the data can be exported in several different formats, the most common of which are DICOM and TIFF stacks. Both of these data types have corresponding metadata, that typically describes the voxel size and other scan parameters (e.g., the parameters listed above). The primary difference between these two data types is that DICOM datasets encode the metadata within them, where TIFF stacks do not (and therefore parameters like voxel size must be manually adjusted in subsequent analyses). Most CT scans that will be used in this lesson will be TIFF stacks, which are simply a sequence of images in .tif format. These stacks can sometimes be very large and will require a computer with lots of RAM and computing power. A general rule of thumb is that, in order to open and analyze your data, you need at least 3-4 times the amount of memory as the size of the volume or image stack. Depending on what you are trying to do, you may need considerably more memory. 
+
+### CT data that is already available
+There are many CT or microCT datasets that are already freely available for use in education and/or research. The repository with the most data at present and that is specifically formatted for sharing image stacks and 3D models is [MorphoSource](morphosource.org). Other repositories include [Zenodo](zenodo.org) or [tDAR](core.tdar.org) (the Digital Archaeological Record). Data may also be shared by authors in association with publications (i.e., as supplementary data).
+
+### Generating your own CT data
+If no relevant data for your research question already exists (or is not publicly accessible), you may instead be interested in conducting your own scanning. CT facilities are widely available, though the equipment present at these facilities may be more or less applicable depending on your needs. You should reach out to facilities you might be interested in working with to ask about pricing and to discuss your scanning needs. 
+
+Some microCT facilities found in the US include:
+* University of Arkansas MICRO (https://micro.uark.edu/)
+* University of Texas High-Resolution Computed Tomography Facility (https://www.ctlab.geo.utexas.edu/)
+* Duke University High Resolution X-ray Computed Tomography Scanner (https://smif.pratt.duke.edu/node/153)
+* University of Minnesota X-ray Computed Tomography Facility (https://xraylab.esci.umn.edu/)
+* University of Colorado Boulder (https://www.colorado.edu/facility/mimic/x-ray-microscope-micronano-computed-tomography) 
+
+### Software
+There is a wide variety of software programs that can process and/or analyze microCT data or 3D models generated from CT data. Some of these have considerable flexibility but can be costly, while others are free but may be limited in their analytical capabilities. You should check with your institution to see if you already have access to any of the proprietary software listed here. 
+
+Programs that can process microCT data and/or 3D models
+* FIJI (formerly known as ImageJ) https://imagej.net/software/fiji/ 
+* 3D Slicer/ SlicerMorphhttps://www.slicer.org/ 
+* R https://cran.r-project.org/ 
+* DragonFly https://www.theobjects.com/dragonfly/index.html and https://www.theobjects.com/dragonfly/get-non-commercial-licensing-program.html 
+* Matlab https://www.mathworks.com/products/matlab.html 
+* Avizo https://www.thermofisher.com/us/en/home/electron-microscopy/products/software-em-3d-vis/avizo-software.html 
+* VGStudioMax https://www.volumegraphics.com/ 
+* Mimics https://www.materialise.com/en/medical/mimics-innovation-suite/mimics 
+* Meshlab https://www.meshlab.net/ 
+* Checkpoint https://www.stratovan.com/products/checkpoint 
+
+What programs do you need to download for this tutorial?
+* FIJI (aka ImageJ) https://imagej.net/software/fiji/ 
+* 3D Slicer https://www.slicer.org/ 
+* Meshlab https://www.meshlab.net/ 
+
+We will focus here on using freely available programs such as FIJI/ImageJ, 3D Slicer, and Meshlab. Make sure to download and install the latest stable release of all three of these programs to the computer you will use to complete this tutorial. For FIJI and 3D Slicer you will also need to install a couple of additional extensions. In the 3D Slicer program’s opening screen, click Install Slicer Extensions and search for and install “SlicerMorph.” Install the BoneJ plugin for FIJI. It can be found here: https://imagej.net/plugins/bonej.
+
+The image stacks you will be using (see below) will be smaller, downsampled versions of the original datasets, which should allow these data to be processed on a computer outfitted with relatively standard hardware. However, please note that many microCT image stacks can be upwards of 3-5 GB in size; opening and processing these image stacks may require increased computer memory (we suggest at least 64 GB) and an enhanced graphics card. 
+
+All three of these programs should function on both Mac and PC systems. Our examples below will be illustrated on a PC system. If you run into inconsistent and/or unexpected behaviors with any of these programs operating on a different system, we encourage you to visit the help pages/tutorials for the programs. 
+
+We strongly recommend you have a three-button mouse: i.e., a mouse that has a left button, a right button, and a scroll wheel. Multiple programs will be considerably easier to use with a mouse than just a laptop touchpad. If you have access to one, a graphics tablet is also helpful, but not necessary.
+
+### Example Datasets
+This repository will use three distinct example datasets to step you through each of the tutorials on data visualization, processing, and analysis. For the first two example datasets we have provided both the full (16-bit) dataset and a downsampled (8-bit) dataset that will be much easier to work with; we also provide an already generated ply model for the bird-effigy whistling pot. In addition, for the second dataset (the ceramic sherd), we have provided a cropped region of interest (ROI) image stack that will be used in Exercise 4. For the third dataset (the human femur from a US Civil War amputation) a single 8-bit DICOM file is available for download. 
+* The first dataset is of a whole pottery vessel, specifically a bird-effigy whistling pot (filename= Bird Effigy Whistling Pot). This vessel was recovered from the north coast of Peru and is associated with the Moche culture. It dates to approximately 500 - 750 B.C.E. This ceramic vessel is currently housed in the University of Arkansas Museum collections in Fayetteville, Arkansas. This microCT scan was generated by the MICRO facility at the University of Arkansas.
+* The second dataset is a ceramic sherd that was recovered from the central area of the "Kansanshi Smelting Area" in the Copperbelt of northern Zambia and dates to the Early Iron Age Phase II (late 7th-9th centuries). This sherd is provided courtesy of Kate De Luna, Georgetown University, Washington, DC. You have the option to examine both the whole sherd, and a cropped volume of the sherd that will be used in Exercise 4. This microCT scan was generated by the MICRO facility at the University of Arkansas as part of a SPARC grant.
+* The third dataset is an amputated Civil War Era human distal femur with a gunshot wound. This individual (a Confederate soldier) was injured at the Battle of Antietam on September 17, 1862 and treated by Union surgeons, with the distal femur amputated on October 8, 1862. This dataset is provided courtesy of the National Museum of Health and Medicine. 
+
+The whole pottery vessel and ceramic sherd datasets can both be downloaded from the MorphoSource Project titled UArk MICRO Example CT Scans. For each of these, the downloaded data will include a TIFF stack and associated metadata file. We encourage you to save each dataset and the associated metadata in a separate folder, all in a larger folder named something like “SPARC MicroCT Tutorial”. Make sure to extract the relevant files before starting the exercises. 
+
+The human femur dataset can be downloaded [here](https://www.morphosource.org/concern/media/000394408?locale=en). To download this data you will have to click on “Request Download”. Please provide the following text in your request: I am requesting permission to use this data in association with the University of Arkansas SPARC MicroCT Tutorial. Once granted permission for download, this data will be provided in a DICOM data format. As with the TIFF stacks, save this dataset in a separate folder (you will need to extract the data before analysis). Metadata for this dataset will be encoded in the DICOM file itself, but we also encourage you to create a word or text document that includes the “File Object Details” listed on this item’s MorphoSource page. This should especially include the X, Y, Z pixel spacing and slice thickness, which represent the voxel size, and the number of images in the set (aka number of projections). If you cannot find these data on the MorphoSource page, make sure to click the “show more” option to expand the image properties. 
+
+### Further Reading
+For a more comprehensive overview of CT imaging and CT imaging artifacts, including the physics involved, you may wish to read the following:
+* [CT Scan. (2022, April) In Wikipedia](https://en.wikipedia.org/wiki/CT_scan). 
+* [Withers, P.J., Bouman, C.J., Carmignato, S., Cnudde, V., Grimaldi, D., Hagen, C.K., Maire, E., Manley, M., Du Plessis, A., & Stock, S.R. (2021). X-ray computed tomography. Nature Reviews Methods Primers 1, 18](https://doi.org/10.1038/s43586-021-00015-4). 
+* [CT Artifacts. (2022, February) In Radiopaedia](https://radiopaedia.org/articles/ct-artifacts). 
+* [Boas F.E. & Fleischmann, D. (2012). CT artifacts: causes and reduction techniques. Imaging in Medicine 4(2), 229-240](https://www.openaccessjournals.com/articles/ct-artifacts-causes-and-reduction-techniques.html). 
+* [Barrett, J.F. & Keat, N. (2004). Artifacts in CT: Recognition and Avoidance. Radiographics 24(6), 1679-1691](https://pubs.rsna.org/doi/10.1148/rg.246045065).    
