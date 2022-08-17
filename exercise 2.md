@@ -23,7 +23,7 @@ Your end result should look something like this:
 #### Draw, Fill Between Spaces, Logical Operations
 Instead of using the Margins function to fill in the base of this model, the other option is to manually fill in the base or any other parts of the model you would like to adjust. First, you may wish to change your view to zoom in on a single orientation; to change your views use the button on the top menu bar just left of the cursor icon. Select “Red slice only” and slide down to the base of the object. You will notice that the surface of the base interior is not level, it has ridges. Additionally, the threshold we chose does not fully select the base of this object. 
 
-![image](castuofa/sparc_microct/images/Screenshot_3.png)
+![image](http://github.com/castuofa/sparc_microct/images/Screenshot_3.png)
 
 
 Change your view to “Green slice only”. One way to fill in the base is to make another segment and manually add the voxels you would like to be included in the segmentation. It is best to use a new segment (and make sure to allow overlap) for the base; you can always combine the segments later. Depending on your preference you may wish to use either the Paint or Draw tools (both work particularly well paired with a graphics tablet). The Paint tool allows you to use your cursor to paint the voxels you would like added to the segment. With the Draw tool, you will use the cursor to outline the edges of the area you would like added; once you have outlined the area you want, right click to accept that area (this may take a moment). Use the “Undo” button at the bottom of the menu if you make a mistake.  
