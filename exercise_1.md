@@ -82,4 +82,4 @@ In the top left hand corner of the 3D viewer, you will see a couple of small but
 To save your new volume, Click the SAVE button in the toolbar of the 3D Slicer screen. Use the Change directory for selected files button to navigate to your SPARC data. Create a new folder to store all the various files that might get associated with the project. We recommend creating a new folder named something like “3D Slicer files” in the folder where your SPARC data are stored (do not save this in the same folder that your image stack is in). There will be at least three files for you to save: a volume NNRD file, a segmentation NNRD file, and a scene MRML file. There will likely be other files that need to be saved; just make sure they are all in the same directory. It might take a second for all of these files to save. Once these are saved and you close 3D Slicer, you can easily pick up where you left off by opening the MRML file again in 3D Slicer. 
 
 ## Next Up
-### [Exercise 2: Creating a 3D model of your object, inside and out](/exercise2final.md)
+### [Exercise 2: Creating a 3D model of your object, inside and out](/exercise_2.md)
