@@ -13,7 +13,7 @@ This repository contains teaching materials designed to introduce university-lev
 Portions of this exercise are adapted from: Kasten, M. (2020) Delving into the Boston Fingerprints Project Archive: A SPARC Teaching Resource. https://github.com/ropitz/sparc_teaching.  
 
 ### Citation
-Please cite this exercise as Claxton, A.G., Wilson, M., Terhune, C. (2022) Exploring microCT Applications in Archaeology: A SPARC Teaching Resource. (https://github.com/castuofa/sparc_microct)
+Please cite this exercise as Claxton, A.G., Wilson, M., Terhune, C. (2022) Exploring microCT Applications in Archaeology: A SPARC Teaching Resource. https://github.com/castuofa/sparc_microct
 
 
 ## Introduction, Aims, and Learning Outcomes
