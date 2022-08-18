@@ -46,12 +46,12 @@ Should you identify any errors with this tutorial or have any problems, please f
 ## Table of Contents
 ### [Background](/background.md)
 
-### [Exercise 1: Loading and visualizing your data](/exercise1.md)
+### [Exercise 1: Loading and visualizing your data](/exercise_1.md)
 
-### [Exercise 2: Creating a 3D model of your object, inside and out](/exercise2.md)
+### [Exercise 2: Creating a 3D model of your object, inside and out](/exercise_2.md)
 
-### [Exercise 3: Collecting basic measurements from your object](/exercise3.md)
+### [Exercise 3: Collecting basic measurements from your object](/exercise_3.md)
 
-### [Exercise 4: Analyzing the internal structure of your object](/exercise4.md)
+### [Exercise 4: Analyzing the internal structure of your object](/exercise_4.md)
 
 ### [Conclusion](/conclusion.md)
