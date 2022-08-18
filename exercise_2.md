@@ -33,6 +33,7 @@ Unfortunately, the Draw and Paint tools only work on a single slice. So you will
 
 As you draw in frames, your screen should look something like this:
 
+![image](/images/Screenshot_4.png)
 
 Click on the “Fill between slices” tool and at the bottom of the left hand menu click “Initialize” to see a preview of the interpolation (this might take a moment to process). Scroll through the slices between those you manually filled and confirm that the interpolation worked properly. If you are happy with it, click “Apply.”
 
@@ -45,12 +46,14 @@ What if you want a 3D representation of the inside of the pot? For this you will
 
 As you stopper up the holes, your screen should look something like this:
 
+![image](/images/Screenshot_9.png)
 
 Now select your blue inside segment and navigate to the “Islands” tool. Check “Add selected island” and then click in the empty space inside the pot. If you have successfully isolated the inside, the internal cavity should be segmented out. If it doesn’t work, double-check to make sure there are no small openings somewhere else. It might help to slightly grow your main body segment by a pixel or two using the Margins tool. You should now have a 3D model of the inside of the pot! This technique can be easily translated to bones if you wanted to, for example, make an endocast of a skull.
 
 
 The space inside the pot should look something like this:
 
+![image](/images/Screenshot_8.png)
 
 If you want to 3D print your model having a lot of empty space and extra surface area will slow down the print considerably and increase the probability of failure. You will want a solid model of the whole bird-whistle pot. If you’ve already segmented out the inside space of the pot, this is quite easy to do. Simply use the Logical operations tool as above, adding the clay surface and the inside space together to create a model that includes both the ceramic of the pot and the space inside the pot. 
 
