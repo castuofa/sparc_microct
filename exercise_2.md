@@ -74,4 +74,4 @@ Your mesh might also have other problems, and it will probably be helpful to fam
 Make sure to properly save your edited 3D model. To do so go to *File>Export Mesh…* or *File>Export Mesh As…* (use the latter if you would like to change your file format and/or retain your original file). 
 
 ## Next Up
-### [Exercise 3: Collecting basic measurements from your object](/exercise3final.md)
+### [Exercise 3: Collecting basic measurements from your object](/exercise_3.md)
