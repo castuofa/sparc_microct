@@ -17,6 +17,7 @@ Once your data is loaded, use the magnifying tool to navigate to the Segment Edi
 
 You may notice in your slices that there are some small holes in the model that were not included in the thresholding. The best way to fill these is to use the Margin function to grow and shrink the selection so that the internal spaces of the object are filled. This function allows you to set the Margin size, which is the area by which you want the selection to grow or shrink. Set this so that the Margin size is about 1.00 mm, and make sure the Operation is set to Grow. Click Apply, and once this is done, scroll through the image stack; you should notice that many of the small spaces are now filled and that the selection has expanded out into the air surrounding the object. You may want to perform one more Grow operation to make sure everything gets filled. Next, you will want to Shrink your selection by the same amount that you grew it, so the boundaries of your selection return to roughly match the outline of the object.  Scrolling through your image stack, you will notice that, though this Grow/Shrink operation mostly filled the internal structure of the object, though there may some large holes remaining. 
 
+
 Your end result should look something like this:
 
 
