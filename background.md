@@ -176,4 +176,4 @@ For a more comprehensive overview of CT imaging and CT imaging artifacts, includ
 * [Barrett, J.F. & Keat, N. (2004). Artifacts in CT: Recognition and Avoidance. Radiographics 24(6), 1679-1691](https://pubs.rsna.org/doi/10.1148/rg.246045065).     
 
 ## Next Up
-### [Exercise 1: Loading and visualizing your data](/exercise1final.md)
+### [Exercise 1: Loading and visualizing your data](/exercise_1.md)
