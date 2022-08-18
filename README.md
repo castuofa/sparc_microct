@@ -20,11 +20,11 @@ The use of computed tomography (CT) imaging in archaeological investigations has
 Many of these applications have specifically utilized micro-computed tomography (i.e., microCT) imaging, which enables the visualization of structures in much greater detail than clinical or industrial CT scanning. CT and microCT imaging are particularly valuable because these techniques allow for the three-dimensional (3D) examination of both the external and internal structure of an object without damaging the object itself. 
 
 In this lesson you will: 
-Understand what microCT data is and how to download and store this data
-Open and visualize microCT data
-Interpret microCT data
-Collect measurements from microCT data
-Generate 3D models from microCT data
+* Understand what microCT data is and how to download and store this data
+* Open and visualize microCT data
+* Interpret microCT data
+* Collect measurements from microCT data
+* Generate 3D models from microCT data
 
 When you have completed this lesson you will be able to:
 Understand how to download, visualize, and process microCT data
