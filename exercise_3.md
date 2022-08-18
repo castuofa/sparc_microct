@@ -72,4 +72,4 @@ Once you’ve placed at least 4-5 points in the same node, navigate to the Creat
 Much more work with landmarks and semilandmarks is beyond the scope of the tutorial here, but we encourage you to take advantage of the documentation for the Markups module (https://slicer.readthedocs.io/en/latest/user_guide/modules/markups.html) and the SlicerMorph (https://slicermorph.github.io/) extension that is specifically designed for geometric morphometric analyses.
 
 ## Next Up
-### [Exercise 4: Analyzing the internal structure of your object](/exercise4final.md)
+### [Exercise 4: Analyzing the internal structure of your object](/exercise_4.md)
