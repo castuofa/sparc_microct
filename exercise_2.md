@@ -10,7 +10,7 @@ The goal of this exercise is to:
 
 This exercise will focus on how to take your data from a set of TIFF images with a variety of different gray scale values (i.e., a volume) to a 3D model. This requires that you assign specific voxels to certain materials; this process is referred to as **segmentation**. For instance, the computer does not actually know that the lighter voxels are ceramic and the darker ones are empty space, it is only our knowledge and context that we recognize that this is the case. 
 
-In this exercise, you are going to use various tools in the Segment Editor module of 3D Slicer to create two 3D models of a ceramic vessel. You will specifically use Dataset 1, the bird whistling pot; unless you have a higher-powered computer we recommend that you use the downsampled dataset (either that you downloaded from MorphoSource or that you created in Exercise 1). 
+In this exercise, you are going to use various tools in the Segment Editor module of 3D Slicer to create two 3D models of a ceramic vessel. You will specifically use Dataset 1, the Bird Effigy Whistling Pot; unless you have a higher-powered computer we recommend that you use the downsampled (8-bit) dataset (either that you downloaded from MorphoSource or that you created in Exercise 1). 
 
 ### Thresholding	
 First, load your data into 3D Slicer. Navigate to the ImageStacks module and browse to the location of your files. Select one of the images, and make sure the voxel size is correct (see the Spacing information). If the voxel size is not accurate, refer to the metadata for your image stack and find the voxel size. Copy those values into the Spacing section (x, y, and z dimensions) 
