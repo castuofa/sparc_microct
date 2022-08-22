@@ -58,7 +58,7 @@ Some of these parameters include:
 
 #### Exposure length
 <ul>
-  <li>A measurement of the elapsed amount of time per projection. </li>
+  <li>A measurement of the elapsed amount of time per projection </li>
   <li>Where possible it is better to increase the exposure length. Longer exposures will allow for decreased power and noise during scanning, but will increase the total length of the scan </li>
 </ul>
 
