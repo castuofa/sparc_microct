@@ -20,7 +20,7 @@ At this point your data are potentially unscaled (i.e., voxel size = 1). To view
 ###### Figure 1-1. Left: Metadata file (.xtekct) produced by the Nikon microCT system housed at the University of Arkansas showing voxel sizes (VoxelSizeX, VoxelSizeY, VoxelSizeZ). Right: Image properties interface from FIJI/ImageJ. 
 
 ## Decreasing the size of your data, saving your changes, adjusting, and editing
-***It’s important to note that many of the following steps will overwrite the original files you have loaded into the program (though not your original saved data). In other words, there is no “undo” or back option for the changes you make in the FIJI/ImageJ**  You may wish to first duplicate your image stack so that you have the ability to easily “undo” changes.* 
+***It’s important to note that many of the following steps will overwrite the original files you have loaded into the program (though not your original saved data). In other words, there is no “undo” or back option for the changes you make in the FIJI/ImageJ.**  For this reason you may wish to first duplicate your image stack so that you have the ability to easily “undo” changes.* 
 
 ### Duplicating a stack
 Because many changes made in FIJI cannot be undone, duplicating a stack before making such changes provides an “undo” opportunity. To do this, select *Image>Duplicate…* from the menu bar. The window that pops up will provide the option to “Duplicate stack”, which you will need to select in order to duplicate each image in the image stack (note, if you wish to duplicate only a section of the image stack, enter the range of images in the text box to duplicate just that portion of the stack). Click “OK”.
