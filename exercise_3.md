@@ -18,7 +18,7 @@ In some instances you may further want to set the scale before you collect any m
 ![image](https://user-images.githubusercontent.com/90789390/184918300-ab201b55-1a82-4c80-bfed-e4dd3d4a8be1.png)
 
 ### Collecting linear measurements in 3D Slicer
-Once we’ve segmented a structure that we’re interested in and we’ve created (exported) it to a model within 3D Slicer, basic measurements like surface area and the volume of the mesh can be found in the Information tab of the Models module (locate and navigate to this module using the magnifying glass or the dropdown menu at the top of the screen). For instance, if you wanted to know the volume of the Bird Whistling Pot, you could make a model of the segment of the inside space that you made in Exercise 2 and measure the volume of that segmented model. 
+Once we’ve segmented a structure that we’re interested in and we’ve created (exported) it to a model within 3D Slicer, basic measurements like surface area and the volume of the mesh can be found in the Information tab of the Models module (locate and navigate to this module using the magnifying glass or the dropdown menu at the top of the screen). For instance, if you wanted to know the volume of the Bird Effigy Whistling Pot, you could make a model of the segment of the inside space that you made in Exercise 2 and measure the volume of that segmented model. 
 
 This module will look something like this:
 
