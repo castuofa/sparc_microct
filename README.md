@@ -3,14 +3,14 @@
 These teaching resources have been created to encourage the reuse of digital archaeological data archived by [SPARC](https://sparc.cast.uark.edu/), in accordance with the ['Reusability' FAIR principle](https://www.go-fair.org/fair-principles/).
 
 ### Licensing
-These teaching materials are made available under a [Creative Commons CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)
+These teaching materials are made available under a [Creative Commons CC-BY 4.0 license.](https://creativecommons.org/licenses/by/4.0/)
 
 ![License Image](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png)
 
 ## Introduction
 This repository contains teaching materials designed to introduce university-level students to working with computed tomography (CT) data. It introduces terminology and metadata specific to CT scanning and data analysis and provides step-by-step instructions for four exercises that cover the basics of processing and interpreting CT data collected through the [SPARC Project](https://sparc.cast.uark.edu/) and/or at the [MicroCT Imaging Consortium for Research and Outreach (MICRO)](https://micro.uark.edu/) facility at the University of Arkansas. 
 
-Portions of this exercise are adapted from: Kasten, M. (2020) Delving into the Boston Fingerprints Project Archive: A SPARC Teaching Resource. https://github.com/ropitz/sparc_teaching.  
+Portions of this exercise are adapted from Kasten, M. (2020) Delving into the Boston Fingerprints Project Archive: A SPARC Teaching Resource. https://github.com/ropitz/sparc_teaching.  
 
 ### Citation
 Please cite this exercise as Claxton, A.G., Wilson, M., Terhune, C. (2022) Exploring microCT Applications in Archaeology: A SPARC Teaching Resource. https://github.com/castuofa/sparc_microct
@@ -21,7 +21,7 @@ The use of computed tomography (CT) imaging in archaeological investigations has
 
 Many of these applications have specifically utilized micro-computed tomography (i.e., microCT) imaging, which enables the visualization of structures in much greater detail than clinical or industrial CT scanning. CT and microCT imaging are particularly valuable because these techniques allow for the three-dimensional (3D) examination of both the external and internal structure of an object without damaging the object itself. 
 
-### In this lesson you will:
+### In this lesson, you will:
 <ul>
   <li>Understand what microCT data is and how to download and store this data</li>
   <li>Open and visualize microCT data</li>
@@ -30,10 +30,10 @@ Many of these applications have specifically utilized micro-computed tomography 
   <li>Generate 3D models from microCT data</li>
 </ul>
 
-### When you have completed this lesson you will be able to:
+### When you have completed this lesson, you will be able to:
 <ul>
   <li>Understand how to download, visualize, and process microCT data</li>
-  <li>Become familiar with free open-source programs for visualizing and manipulating microCT data and 3D models</li>
+  <li>Become familiar with free, open-source programs for visualizing and manipulating microCT data and 3D models</li>
   <li>Understand the range of applications of microCT in archaeological investigations</li>
 </ul>
 
