@@ -1,8 +1,8 @@
 ## Conclusion
-Through these four exercises you have been introduced to a range of basic tools, concepts, and methods to visualize, process, and analyze microCT data. 
+Through these four exercises, you have been introduced to a range of basic tools, concepts, and methods to visualize, process, and analyze microCT data. 
 <ul>
-  <li>You understand the range of applications of microCT in archaeological investigations</li>
-  <li>You understand what microCT data is and how to download and store this data</li>
+  <li>You understand the range of applications of microCT in archaeological investigations.</li>
+  <li>You understand what microCT data is and how to download and store this data.</li>
   <li>You know how to open, visualize, and interpret microCT data</li>
   <li>You can generate 3D models from and collect measurements and landmarks on microCT data</li>
   <li>You are able to analyze the microstructural properties of microCT data</li>
